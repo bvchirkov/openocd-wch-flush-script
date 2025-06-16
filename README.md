@@ -3,3 +3,37 @@
 This config extends the default configuration with features like:
 - disabling MCU code protection before programming
 - enabling protection again afterward
+
+# How to use
+
+There are two ways to use this configuration.
+
+## 1. As the Default Configuration
+
+Replace the default OpenOCD configuration.
+
+If you're using **MounRiver Studio**, the path to the default configuration file is: `/MRS_Community/toolchain/OpenOCD/bin/`.
+
+## 2. As an External Configuration
+
+Create a bash-script for use without an IDE.
+
+``` c
+#!/bin/bash
+OPENOCD_PATH=<path/to/wch/openocd/bin>
+CFG_PATH=<path/to/configuration>
+$OPENOCD_PATH/openocd \
+  -f $CFG_PATH/wch-riscv.cfg \
+  -c "init" \
+  -c "unlock" \
+  -c "program $1 verify" \
+  -c "lock" \
+  -c "reset" \
+  -c "exit"
+```
+
+The script argument should be either a `hex` or `elf` firmware file.
+
+# Reference
+
+For more details about this configuration, refer to the article [Использование OpenOCD для установки/снятия запрета чтения памяти CH32V20x](https://habr.com/ru/articles/864344/)
