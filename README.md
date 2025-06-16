@@ -1,0 +1,1 @@
+# openocd-wch-flush-script
