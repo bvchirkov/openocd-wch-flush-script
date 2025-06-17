@@ -4,9 +4,10 @@ This config extends the default configuration with features like:
 - disabling MCU code protection before programming
 - enabling protection again afterward
 
-## Reason
+## Reasons
 
-...
+- MounRiver Studio versions below 2 cannot automatically disable flash protection.
+- WCH-LinkUtility is not available on Linux-based operating systems.
 
 ## Requirements
 
