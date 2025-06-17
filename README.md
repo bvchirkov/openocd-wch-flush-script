@@ -24,7 +24,7 @@ Replace the default OpenOCD configuration.
 
 (If you're using **MounRiver Studio**, the path to the default configuration file is: `/MRS_Community/toolchain/OpenOCD/bin/`)
 
-To access the custom lock and unlock functions, set up the IDE as shown in the image below.
+To use the custom `lock` and `unlock` functions, configure the IDE as shown in the image below
 
 ![](https://github.com/bvchirkov/imgs/blob/main/MRS_RunConfigurations_Ext.png)
 
