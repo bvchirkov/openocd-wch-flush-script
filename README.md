@@ -50,4 +50,4 @@ The script argument should be either a `hex` or `elf` firmware file.
 
 ## Reference
 
-For more details about this configuration, refer to the article [Использование OpenOCD для установки/снятия запрета чтения памяти CH32V20x](https://habr.com/ru/articles/864344/)
+Original article on Habr: [Использование OpenOCD для установки/снятия запрета чтения памяти CH32V20x](https://habr.com/ru/articles/864344/)
